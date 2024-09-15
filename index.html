@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <h1>PASSWORD GENERATOR</h1>
+
+      <!-- Generate Password Section -->
+      <div class="pass-wrapper">
+        <div class="password-section">
+          <input type="text" class="pass" placeholder="PASSWORD" readonly>
+          <span class="teller"></span>
+          <button class="copy-button"><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <button class="generate-button">Generate Password</button>
+      </div>
+  
+      <!-- Main Card Section-->
+      <div class="main-card">
+  
+        <!-- Password Length Section-->
+        <div class="password-length-section">
+          <p>Password Length</p>
+          <div class="password-limit">0</div>
+        </div>
+  
+        <!-- Range Input-->
+        <input type="range" min="0" max="20" class="range">
+  
+        <!-- Check Boxes Section-->
+        <div class="check-boxes">
+          <input type="checkbox" id="symbols" class="check-box">
+          <label for="symbols">Include Symbols</label>
+        </div>
+        <div class="check-boxes">
+          <input type="checkbox" id="numbers" class="check-box">
+          <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="check-boxes">
+          <input type="checkbox" id="lowercase" class="check-box">
+          <label for="lowercase">Include Lowercase letters</label>
+        </div>
+        <div class="check-boxes">
+          <input type="checkbox" id="uppercase" class="check-box">
+          <label for="uppercase">Include Uppercase letters</label>
+        </div>
+  
+        <!-- Strength Section-->
+        <div class="strength-section">
+          <p>Strenght</p>
+          <div class="light"></div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
